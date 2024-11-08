@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halton Game Jam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body class="bob">
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <img class="logo" id="logo" src="logo.png" alt="logo" height="80" />
+            <a href="#hero">Home</a>
+            <a href="#games">About</a>
+            <a href="#testimonials">FAQ</a>
+            <!--a href="https://discord.gg/UKJNuJ8y7u" target="_blank">
+                <img class="discordbutton" src="discord-removebg-preview.png" height="40" alt="Discord Logo">
+            </a> -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1 class="title">Halton Game Jam</h1>
+            <h1 class="tagline" id="typewriter"><span class="auto-type"></span></h1>
+            <div class="cta">
+                <a href="https://forms.gle/ctMER1fnkLSnY66d6" target="_blank" class="button">Join the Jam!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="container countdown">
+        <h2>Event Countdown ⌛<br><br></h2>
+        <div id="countdown-timer"><br><br>00d 00h 00m 00s</div>
+    </section>
+
+    <!-- Mini Game Showcase -->
+    <section id="games" class="container game-showcase">
+        <h2>About</h2>
+        <div class="centered-grid">
+            <div class="testimonial">
+                <h3><b class="light-red">What</b></h3>
+                <p>A Game Jam is a hackathon for game developers! Create a game individually, or in groups up to 4 within 52 hours.</p>
+            </div>
+            <div class="testimonial">
+                <h3><b class="light-red">Why</b></h3>
+                <p>To collaborate with others and gain a better grasp on developing games!</p>
+            </div>
+            <div class="testimonial">
+                <h3><b class="light-red">When</b></h3>
+                <p>The event will begin December 6th with a kickoff at 5pm and last until December 8th, 12:00AM.</p>
+            </div>
+            <div class="testimonial">
+                <h3><b class="light-red">Where</b></h3>
+                <p>The event will be held online. Participants only have to join a call during the kickoff (Highly Recommended), and the rest of the event can be done with your teams/individually and submitted through itch.io.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="testimonials" class="testimonials">
+    <div class="faq-header">
+        <h2 class="faqtitle">Frequently Asked Questions</h2>
+    </div>
+        <br>
+        <div class="faq-grid">
+            <div class="faq-card">
+                <div class="faq-question">Do I need to be a part of HDSB?</div>
+                <div class="faq-answer">No! Any student can join the Game Jam online, including those from HCDSB. All students across Ontario are welcome to participate. </div>
+            </div>
+            <div class="faq-card">
+                <div class="faq-question">Do I need to have prior experience?</div>
+                <div class="faq-answer">No! You don't need any prior experience during this event. We highly encourage learning as you go. (We will also teach you ways to find and solve errors).</div>
+            </div>
+            <div class="faq-card">
+                <div class="faq-question">Do I need to use any specific programming language or game engine?</div>
+                <div class="faq-answer">No! You're free to use any programming language or game engine you prefer. We recommend Unity, Unreal Engine, or Godot, as these are widely used in the gaming industry and can be valuable for future experience. As long as the game is playable in a web browser via Web Graphics Library (WebGL) or HTML5 and can be uploaded to Itch.io, it's acceptable.</div>
+            </div>
+            <div class="faq-card">
+                <div class="faq-question">Do I have to develop everything from scratch? (scripts, models, animations)</div>
+                <div class="faq-answer">No! You can use assets from the internet as long as you have the rights to use them. We recommend using free assets from websites like itch.io, opengameart.org, and kenney.nl. Plus, the use of AI is allowed, but make sure your game is copyright free!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <a href="https://instagram.com/haltongamejam" style="color:red;">@haltongamejam</a>
+        <p style="font-size: 10px;">Made by Mehar & Abhi</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="joinModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Join the Game Jam</h2>
+            <form id="joinForm">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Why do you want to join?" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="cursor"></div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="load.js"></script>
+</body>
+
+</html>
