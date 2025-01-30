@@ -4,3 +4,7 @@ sudo apt update
 sudo apt install --fix-broken -y
 sudo dpkg -i chrome-remote-desktop_current_amd64.deb
 sudo apt install -f
+sudo apt update
+sudo apt install -y firefox #use "firefox" to run
+sudo apt install -y tmux  # Install tmux
+tmux new -s keepalive
