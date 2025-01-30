@@ -1,0 +1,6 @@
+sudo apt update && sudo apt install -y xfce4 xfce4-goodies
+DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname)
+sudo apt update
+sudo apt install --fix-broken -y
+sudo dpkg -i chrome-remote-desktop_current_amd64.deb
+sudo apt install -f
