@@ -8,3 +8,4 @@ sudo apt update
 sudo apt install -y firefox #use "firefox" to run
 sudo apt install -y tmux  # Install tmux
 tmux new -s keepalive
+pulseaudio --start
